@@ -1,0 +1,23 @@
+#	CONFIGURATION FILE FOR STM8 C++ COMPILER
+#	Copyright (c) 2017 by COSMIC Software
+#
+-pfno-signed-char		# unsigned char
+-pfshort-enums			# compact enums
+-pundef				# undef system defines
+-pstd=c++11			# enable 2011 standard
+-i "C:\Program Files (x86)\COSMIC\CXSTM8++\HSTM8++"
+-gll				# emulate long long
+-cpc99				# select c99
+#
+-m debug:g,,+debug		# debug: produce debug info
+-m nobss:,,+nobss		# nobss: do not use bss
+-m nocst:,,+nocst		# nocst: constants in code
+-m nocross:,,+nocross		# nocross: functions do not cross boundaries
+-m rev:,,+rev			# rev: reverse bit field order
+-m split:,,+split		# split: functions in different sections
+-m proto:,,+proto		# proto: enable prototype checking
+-m compact:,,+compact,fast	# compact: factorize code
+-m fast:,,+fast,compact		# fast: inline long transferts
+#
+-m mods0:,,+mods0,modsl0	# stack model 64K
+-m modsl0::,,+modsl0,mods0	# stack long model 64K [default]

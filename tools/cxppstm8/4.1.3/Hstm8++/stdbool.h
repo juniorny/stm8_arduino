@@ -1,0 +1,18 @@
+/*	STANDARD BOOLEAN HEADER
+ *	Copyright (c) 2017 by COSMIC Software
+ */
+#ifndef __STDBOOL
+#define __STDBOOL	1
+
+#ifndef __cplusplus
+
+#define bool _Bool
+
+#define true 1
+#define false 0
+
+#endif
+
+#define __bool_true_false_are_defined 1
+
+#endif

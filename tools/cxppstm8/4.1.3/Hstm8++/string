@@ -1,0 +1,32 @@
+//	BASIC STRING
+//	Copyright (c) 2017 by COSMIC Software
+//
+#ifndef _STRING_
+#define _STRING_
+
+#include <iostream>
+
+namespace std {
+
+class String {
+private:
+	unsigned int len;
+	char *str;
+public:
+	String();
+	String(const char *);
+	String(String&);
+	~String();
+	String& operator=(const char *);
+	String& operator=(const String&);
+	String& operator+=(const char *);
+	String& operator+=(const String&);
+	unsigned int Length();
+	friend ostream& operator<<(ostream&, const String&);
+	};
+
+String operator+(String, String&);
+
+}
+
+#endif

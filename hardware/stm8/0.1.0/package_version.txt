@@ -1,0 +1,4 @@
+commit 92e18ede7e021a1fb7483c8b9dbfaa4c38790645
+Author: Noomane Ridha <ridha.noomane@wi6labs.com>
+
+    Update Wire library for STM8 architecture

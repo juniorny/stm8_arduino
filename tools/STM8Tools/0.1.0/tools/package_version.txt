@@ -1,0 +1,4 @@
+commit c47d83ef190995109d6e5b088dd0c20fe4b4cad5
+Author: Noomane Ridha <ridha.noomane@wi6labs.com>
+
+    Add scripts

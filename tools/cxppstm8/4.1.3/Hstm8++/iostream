@@ -1,0 +1,26 @@
+//	BASIC IO STREAM
+//	Copyright (c) 2017 by COSMIC Software
+//
+#ifndef _IOSTREAM_
+#define _IOSTREAM_
+
+namespace std {
+
+class ostream {
+private:
+	unsigned int flags;
+public:
+	ostream& operator<<(const char *);
+	ostream& operator<<(char);
+	ostream& operator<<(int);
+	ostream& operator<<(long);
+	ostream& operator<<(float);
+	ostream& operator<<(ostream& (*)(ostream&));
+	};
+
+extern ostream cout;
+extern ostream& endl(ostream&);
+}
+
+#endif
+
