@@ -122,8 +122,8 @@ enum {
 #define NUM_ANALOG_FIRST    43
 
 // On-board LED pin number
-#define LED_BUILTIN         13
-#define LED_GREEN           LED_BUILTIN
+#define LED_BUILTIN         43
+#define LED_RED           	 LED_BUILTIN
 
 // On-board User button
 #define USER_BTN            PE4
