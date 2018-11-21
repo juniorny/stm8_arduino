@@ -2799,9 +2799,9 @@ AES_TypeDef;
 #define GPIOD_BASE                  (uint16_t)0x500F
 #define GPIOE_BASE                  (uint16_t)0x5014
 #define GPIOF_BASE                  (uint16_t)0x5019
-#define GPIOG_BASE                  (uint16_t)0x501E
-#define GPIOH_BASE                  (uint16_t)0x5023
-#define GPIOI_BASE                  (uint16_t)0x5028
+//#define GPIOG_BASE                  (uint16_t)0x501E
+//#define GPIOH_BASE                  (uint16_t)0x5023
+//#define GPIOI_BASE                  (uint16_t)0x5028
 #define FLASH_BASE                  (uint16_t)0x5050
 #define DMA1_BASE                   (uint16_t)0x5070
 #define DMA1_Channel0_BASE          (uint16_t)0x5075

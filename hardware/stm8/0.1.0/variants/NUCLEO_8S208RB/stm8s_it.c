@@ -496,21 +496,21 @@ void (* const @vector _vectab[32])() = {
 	EXTI_PORTC_IRQHandler,			/* EXTI2       */
 	EXTI_PORTD_IRQHandler,			/* EXTI3       */
 	EXTI_PORTE_IRQHandler,			/* EXTI4       */
-	CAN_RX_IRQHandler,			/* CAN Rx interrupt    */
-	CAN_TX_IRQHandler,			/* CAN Tx interrupt    */
+//	CAN_RX_IRQHandler,			/* CAN Rx interrupt    */
+//	CAN_TX_IRQHandler,			/* CAN Tx interrupt    */
 	SPI_IRQHandler,				/* SPI         */
 	TIM1_UPD_OVF_TRG_BRK_IRQHandler,	/* TIMER 1 OVF */
 	TIM1_CAP_COM_IRQHandler,		/* TIMER 1 CAP */
 	TIM2_UPD_OVF_BRK_IRQHandler,		/* TIMER 2 OVF */
 	TIM2_CAP_COM_IRQHandler,		/* TIMER 2 CAP */
-	TIM3_UPD_OVF_BRK_IRQHandler,		/* TIMER 3 OVF */
-	TIM3_CAP_COM_IRQHandler,		/* TIMER 3 CAP */
+//	TIM3_UPD_OVF_BRK_IRQHandler,		/* TIMER 3 OVF */
+//	TIM3_CAP_COM_IRQHandler,		/* TIMER 3 CAP */
 	UART1_TX_IRQHandler,			/* UART1 Tx   */
 	UART1_RX_IRQHandler,			/* UART1 Rx    */
 	I2C_IRQHandler,				/* I2C         */
-	UART3_TX_IRQHandler,			/* UART3 TX    */
-	UART3_RX_IRQHandler,			/* UART3 RX    */
-	ADC2_IRQHandler,			/* ADC1        */
+//	UART3_TX_IRQHandler,			/* UART3 TX    */
+//	UART3_RX_IRQHandler,			/* UART3 RX    */
+//	ADC2_IRQHandler,			/* ADC1        */
 	TIM4_UPD_OVF_IRQHandler,		/* TIMER 4 OVF */
 	EEPROM_EEC_IRQHandler,			/* EEPROM ECC  */
 	NonHandledInterrupt,			/* Reserved    */

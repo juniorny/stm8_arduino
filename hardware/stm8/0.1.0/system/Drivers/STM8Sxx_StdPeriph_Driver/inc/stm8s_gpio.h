@@ -32,6 +32,10 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm8s.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /* Exported variables ------------------------------------------------------- */
 /* Exported types ------------------------------------------------------------*/
 
@@ -149,6 +153,10 @@ void GPIO_ExternalPullUpConfig(GPIO_TypeDef* GPIOx, GPIO_Pin_TypeDef GPIO_Pin, F
 /**
   * @}
   */
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* __STM8L_GPIO_H */
 

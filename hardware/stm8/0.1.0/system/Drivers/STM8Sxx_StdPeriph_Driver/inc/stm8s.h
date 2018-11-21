@@ -2566,9 +2566,9 @@ CFG_TypeDef;
 #define GPIOD_BaseAddress       0x500F
 #define GPIOE_BaseAddress       0x5014
 #define GPIOF_BaseAddress       0x5019
-#define GPIOG_BaseAddress       0x501E
-#define GPIOH_BaseAddress       0x5023
-#define GPIOI_BaseAddress       0x5028
+//#define GPIOG_BaseAddress       0x501E
+//#define GPIOH_BaseAddress       0x5023
+//#define GPIOI_BaseAddress       0x5028
 #define FLASH_BaseAddress       0x505A
 #define EXTI_BaseAddress        0x50A0
 #define RST_BaseAddress         0x50B3

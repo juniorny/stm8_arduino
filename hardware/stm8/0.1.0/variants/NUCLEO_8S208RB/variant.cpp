@@ -44,7 +44,7 @@ const PinName digitalPin[] = {
     PD_5, //D1  TX
     PE_0, //D2
     PC_1, //D3 PWM
-    PG_0, //D4
+//    PG_0, //D4
     PC_2, //D5 PWM
     PC_3, //D6 PWM
     PD_1, //D7
@@ -58,8 +58,8 @@ const PinName digitalPin[] = {
     PE_1, //D15 I2C SCL
     // ST Morpho
     // CN1 Left Side
-    PG_4, //D16
-    PG_5, //D17
+//    PG_4, //D16
+//    PG_5, //D17
     PE_7, //D18
     PE_6, //D19
     PA_3, //D20
@@ -67,8 +67,8 @@ const PinName digitalPin[] = {
     PA_5, //D22
     PA_6, //D23
     // CN1 Right Side
-    PG_7, //D24
-    PG_6, //D25
+//    PG_7, //D24
+//    PG_6, //D25
     // CN9 Left Side
     PD_7, //D26
     // CN9 Right Side
@@ -83,11 +83,11 @@ const PinName digitalPin[] = {
     PF_0, //D35
     PD_2, //D36
     PD_0, //D37
-    PG_1, //D38
+//    PG_1, //D38
     PE_4, //D39
     PE_3, //D40
-    PG_3, //D41
-    PG_2, //D42
+//    PG_3, //D41
+//    PG_2, //D42
     PB_5, //D43/A0
     PB_4, //D44/A1
     PB_3, //D45/A2

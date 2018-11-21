@@ -40,7 +40,7 @@ int main(void)
 {
   initVariant();
 
-  init();
+//  init();
 
   setup();
 
@@ -48,8 +48,8 @@ int main(void)
   {
 
     loop();
-    if (&serialEventRun)
-      serialEventRun();
+//    if (&serialEventRun)
+//      serialEventRun();
   }
 
   return 0;

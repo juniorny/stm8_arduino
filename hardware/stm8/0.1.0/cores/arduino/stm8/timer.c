@@ -115,8 +115,8 @@ extern "C"
       return TIM1_E;
     if (peripheral == TIM2)
       return TIM2_E;
-    if (peripheral == TIM3)
-      return TIM3_E;
+//    if (peripheral == TIM3)
+//      return TIM3_E;
     if (peripheral == TIM4)
       return TIM4_E;
   }
@@ -157,18 +157,18 @@ extern "C"
       g_timer_config[TIM2_E].configured = 1;
       break;
 
-    case TIM3_E:
-      TIM3_DeInit();
-      if (IS_TIM3_PRESCALER_OK((TIM3_Prescaler_TypeDef)prescaler) == 0)
-      {
-        return;
-      }
-      CLK_PeripheralClockConfig(CLK_PERIPHERAL_TIMER3, ENABLE);
-      TIM3_TimeBaseInit((TIM3_Prescaler_TypeDef)prescaler, period);
-      TIM3_ITConfig(TIM3_IT_UPDATE, ENABLE);
-      TIM3_Cmd(ENABLE);
-      g_timer_config[TIM3_E].configured = 1;
-      break;
+//    case TIM3_E:
+//      TIM3_DeInit();
+//      if (IS_TIM3_PRESCALER_OK((TIM3_Prescaler_TypeDef)prescaler) == 0)
+//      {
+//        return;
+//      }
+//      CLK_PeripheralClockConfig(CLK_PERIPHERAL_TIMER3, ENABLE);
+//      TIM3_TimeBaseInit((TIM3_Prescaler_TypeDef)prescaler, period);
+//      TIM3_ITConfig(TIM3_IT_UPDATE, ENABLE);
+//      TIM3_Cmd(ENABLE);
+//      g_timer_config[TIM3_E].configured = 1;
+//      break;
 
     case TIM4_E:
       TIM4_DeInit();
@@ -262,10 +262,10 @@ extern "C"
       g_timer_config[TIM2_E].configured = 0;
       break;
 
-    case TIM3_E:
-      TIM3_DeInit();
-      g_timer_config[TIM3_E].configured = 0;
-      break;
+//    case TIM3_E:
+//      TIM3_DeInit();
+//      g_timer_config[TIM3_E].configured = 0;
+//      break;
 
     case TIM4_E:
       TIM4_DeInit();
@@ -353,17 +353,17 @@ extern "C"
       g_timer_config[TIM2_E].irqHandleOC = irqHandle;
       break;
 
-    case TIM3_E:
-      TIM3_DeInit();
-      CLK_PeripheralClockConfig(CLK_PERIPHERAL_TIMER3, ENABLE);
-      TIM3_TimeBaseInit(TIM3_PRESCALER_16, period);
-      TIM3_OC1Init(TIM3_OCMODE_TIMING, TIM3_OUTPUTSTATE_DISABLE, pulseWidth,
-                   TIM3_OCPOLARITY_LOW);
-      TIM3_ITConfig(TIM3_IT_CC1, ENABLE);
-      TIM3_Cmd(ENABLE);
-      g_timer_config[TIM3_E].configured = 1;
-      g_timer_config[TIM3_E].irqHandleOC = irqHandle;
-      break;
+//    case TIM3_E:
+//      TIM3_DeInit();
+//      CLK_PeripheralClockConfig(CLK_PERIPHERAL_TIMER3, ENABLE);
+//      TIM3_TimeBaseInit(TIM3_PRESCALER_16, period);
+//      TIM3_OC1Init(TIM3_OCMODE_TIMING, TIM3_OUTPUTSTATE_DISABLE, pulseWidth,
+//                   TIM3_OCPOLARITY_LOW);
+//      TIM3_ITConfig(TIM3_IT_CC1, ENABLE);
+//      TIM3_Cmd(ENABLE);
+//      g_timer_config[TIM3_E].configured = 1;
+//      g_timer_config[TIM3_E].irqHandleOC = irqHandle;
+//      break;
 
     default:
       return;
@@ -438,9 +438,9 @@ extern "C"
       TIM2_DeInit();
       break;
 
-    case TIM3_E:
-      TIM3_DeInit();
-      break;
+//    case TIM3_E:
+//      TIM3_DeInit();
+//      break;
 
     default:
       return;
@@ -478,9 +478,9 @@ extern "C"
         channel = TIM2_CHANNEL_1;
         break;
 
-      case TIM3_E:
-        channel = TIM3_CHANNEL_1;
-        break;
+//      case TIM3_E:
+//        channel = TIM3_CHANNEL_1;
+//        break;
 #elif defined(STM8Lxx)
     case TIM1_E:
       channel = TIM1_Channel_1;
@@ -644,9 +644,9 @@ extern "C"
         data = TIM2_GetCounter();
         break;
 
-      case TIM3_E:
-        data = TIM3_GetCounter();
-        break;
+//      case TIM3_E:
+//        data = TIM3_GetCounter();
+//        break;
 
       case TIM4_E:
         data = (uint16_t)TIM4_GetCounter();
@@ -684,9 +684,9 @@ extern "C"
         TIM2_SetCounter(value);
         break;
 
-      case TIM3_E:
-        TIM3_SetCounter(value);
-        break;
+//      case TIM3_E:
+//        TIM3_SetCounter(value);
+//        break;
 
       case TIM4_E:
         TIM4_SetCounter((uint8_t)value);
@@ -746,16 +746,16 @@ extern "C"
         }
         break;
 
-      case TIM3_E:
-        if (channel == TIM3_CHANNEL_1)
-        {
-          TIM3_SetCompare1(value);
-        }
-        else if (channel == TIM3_CHANNEL_2)
-        {
-          TIM3_SetCompare2(value);
-        }
-        break;
+//      case TIM3_E:
+//        if (channel == TIM3_CHANNEL_1)
+//        {
+//          TIM3_SetCompare1(value);
+//        }
+//        else if (channel == TIM3_CHANNEL_2)
+//        {
+//          TIM3_SetCompare2(value);
+//        }
+//        break;
 
       default:
         break;
